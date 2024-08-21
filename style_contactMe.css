@@ -1,0 +1,475 @@
+@charset "UTF-8";
+
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background: #d4ffed;
+	background: -webkit-linear-gradient(0deg, #d4ffed 0%, #d4ffed 50%, #a8fbd8 100%);
+	background: linear-gradient(0deg, #d4ffed 0%, #d4ffed 50%, #a8fbd8 100%);
+}
+
+/* hide scrollbar but allow scrolling */
+body::-webkit-scrollbar, #iPhscrollDiv::-webkit-scrollbar, #iPhcontent::-webkit-scrollbar, .iPhfixed::-webkit-scrollbar, #scrollDiv::-webkit-scrollbar, #bfix::-webkit-scrollbar, #inScroll::-webkit-scrollbar, #content::-webkit-scrollbar{
+  	-ms-overflow-style: none; /* for Internet Explorer, Edge */
+  	scrollbar-width: none; /* for Firefox */
+  	overflow-y: scroll; 
+  	display: none; /* for Chrome, Safari, and Opera */
+}
+
+h1, h2, h3, h4, p{
+	color: #098785;
+}
+
+h1, h2, h3, h4{
+	text-align: center;
+}
+
+h1{
+	font-size: 1.8em;
+	line-height: 1.5em;
+	padding: 0 25px;
+	letter-spacing: 3px;
+}
+
+h2{
+	font-size: 2.1em;
+	line-height: 1.1em;
+	padding: 0 25px;
+	letter-spacing: 3px;
+}
+
+h3{
+	font-size: 2em;
+	line-height: 1em;
+	padding: 0 25px;
+	letter-spacing: 3px;
+}
+
+h4{
+	font-size: 1.3em;
+	line-height: 1.5em;
+	padding: 0 15px;
+	font-weight: 600;
+	letter-spacing: 3px !important;
+}
+
+p{
+	font-size: 1.1em;
+	line-height: 1.5em;
+	font-weight: 500;
+	text-align: left;
+	padding: 5px 25px;
+	letter-spacing: .5px;
+}
+
+/* Nav styling start */
+.navHeader{
+	position: fixed;
+	width: 100%;
+	height: 5vh;
+	top: 0;
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	background: #a8fbd8;
+	z-index: 9999;
+	-webkit-box-shadow: -1px 11px 5px -3px rgba(0, 77, 53, 0.37);
+	-moz-box-shadow: -1px 11px 5px -3px rgba(0, 77, 53, 0.37);
+	box-shadow: -1px 11px 5px -3px rgba(0, 77, 53, 0.37);
+	z-index: 9;
+}
+
+.NavThird1, .NavThird2, .NavThird3{
+	position: relative;
+	width: 33.33%;
+	height: 5vh;
+	top: 0;
+	left: 0;
+	float: left;
+}
+
+.headBtn{
+	width: 33.33%;
+	height: 100%;
+	align-content: center;
+	float: left;
+}
+
+.headBtnInner{
+	position: relative;
+  	top: 1.5px;
+  	left: 18%;
+  	width: 50%;
+  	height: 40px;
+  	align-content: center;
+  	border: #098785 solid 3px;
+  	border-radius: 25px;
+	font-size: .75em;
+	line-height: 3.5em;
+	text-align: center;
+	margin: 0 2px;
+	font-weight: 900;
+	letter-spacing: 1.2px;
+	color: #098785;
+}
+
+.headBtnInner:hover{
+  	border: #a8fbd8 solid 3px;
+	color: #d4ffed;
+	background: #098785;
+}
+/* Nav styling end */
+
+/* Sydney setup start */
+.SydSec{
+	position: fixed;
+	width: 100%;
+	height: 80vh;
+	bottom: 2vh;
+	background: transparent;
+	z-index: -1;
+}
+
+.Hbridge, .OH, .Back1, .Back2, .Back4, .Back5, .Back6, .Center1, .Front1, .Front2, .Front3, .Front4, .centrepoint, .Center2, .Center3{
+	position: fixed;
+	bottom: 3vh;
+	z-index: -1;
+	height: 55vh;
+}
+
+.Hbridge{
+	right: 6vw;
+	width: 30%;
+}
+
+.OH{
+	right: 2vw;
+	width: 30%;
+}
+
+.Back1{
+	right: 38vw;
+	width: 5%;
+}
+
+.Back2{
+	right: 43vw;
+	width: 7%;
+}
+
+.Back3{
+	position: fixed;
+	bottom: 3vh;
+	z-index: -1;
+	right: 50vw;
+	width: 7%;
+	height: 35vh;
+}
+
+.Back4{
+	right: 58vw;
+	width: 7%;
+}
+
+.Back5{
+	right: 68vw;
+	width: 7%;
+}
+
+.Back6{
+	right: 85.1vw;
+	width: 5%;
+}
+
+.Center1{
+	right: 39vw;
+	width: 13%;
+}
+
+.Front1{
+	right: 33vw;
+	width: 6%;
+}
+
+.Front2{
+	right: 40.5vw;
+	width: 5%;
+}
+
+.Front3{
+	right: 46.7vw;
+	width: 5%;
+}
+
+.Front4{
+	right: 53.7vw;
+	width: 6%;
+}
+
+.centrepoint{
+	right: 64vw;
+	width: 7%;
+}
+
+.Center2{
+	right: 73.9vw;
+	width: 12.1%;
+}
+
+.Center3{
+	right: 89vw;
+	width: 11%;
+}
+
+/* scrim */
+.SphTop{
+	position: fixed;
+	top: 5vh;
+	left: 0;
+	width: 100%;
+	height: 95vh;
+	background: #d4ffed;
+	background: -webkit-linear-gradient(0deg, #d4ffed 0%, #d4ffed 50%, #a8fbd8 100%);
+	background: linear-gradient(0deg, #d4ffed 0%, #d4ffed 50%, #a8fbd8 100%);
+	opacity: .85;
+	z-index: -1;
+}
+/* Sydney setup end */
+
+/* scrollscreens and containers start */
+.scrSpaceCol1, .scrSpaceCol2, .scrSpaceCol3{
+  	position: relative;
+  	top: 0;
+  	left: 0;
+  	width: 33.33%;
+  	float: left;
+  	align-content: center;	
+}
+
+.spaceDiv{
+	position: relative;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+	float: left;
+  	height: 100px;
+}
+
+.spaceDivMQ{
+	display: none;
+}
+
+.paraCon{
+	position: relative;
+	width: 100%;
+	float: left;
+  	top: 0;
+  	left: 0;
+  	display: flex;
+  	justify-content: center;
+  	height: auto;
+}
+
+.paraConLogoInner{
+	position: relative;
+	top: 0;
+	width: 407px;
+	height: 120px;
+	display: flex;
+	justify-content: center;
+}
+/* scrollscreens and containers end */
+
+.phone, .email{  
+	padding: 3px;
+	border-radius: 15px;
+	text-decoration: none !important;	
+	background: #a8fbd8;
+	border-radius: 15px;
+	pointer-events: all;
+}
+
+.phone:hover, .email:hover{
+	color: #a8fbd8 !important; 
+	background: #098785 !important;
+	text-decoration: none !important;	
+}
+/* aside end */
+
+/* footer style start */
+.navFooter{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 5vh;
+	background: #d4ffed;
+	z-index: 60000;
+	-webkit-box-shadow: 8px 0 0 0 rgba(0, 77, 53, 0.37);
+	-moz-box-shadow: 8px 0 0 0 rgba(0, 77, 53, 0.37);
+	box-shadow: 8px 0 0 0 rgba(0, 77, 53, 0.37);
+	box-shadow: 0 0 2em rgba(0, 77, 53, 0.37);
+	-webkit-box-shadow: 0 0 2em rgba(0, 77, 53, 0.37);
+	-moz-box-shadow: 0 0 2em rgba(0, 77, 53, 0.37);
+}
+/* footer style end */
+
+@media screen and (max-width: 2150px){
+
+.spaceDivMQ{
+	display: flex;
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	height: 80px;
+}
+
+.spaceDiv{
+	display: none !important;
+}
+}
+
+@media screen and (max-width: 1920px){
+
+.navHeader{
+	height: 6vh;
+}
+		
+.headBtnInner{
+	margin: 8px 0 0 14.7% !important;
+	top: 0;
+	left: 0;
+	font-size: .6em !important;
+}	
+
+.logoFoot{
+    width: 100%;
+    margin: .01% 0 0 1% !important;
+    left: 0;
+}	
+}
+
+@media screen and (max-width: 1440px){
+
+.navHeader{
+	background: rgba(96, 252, 192, 0.768);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	height: 20px;
+}	
+		
+.headBtnInner, .headBtn{
+	margin: 0 !important;
+	top: 0;
+	height: 16px;
+	line-height: .5em;
+}
+		
+.headBtnInner{
+	top: 0 !important;
+	margin-top: 0 !important;
+	width: 75%;
+}	
+
+.paraConMQ{
+	margin: 2vh 0 0 0 !important;
+}
+
+.SydSec{
+	display: none;
+}
+
+.scrSpaceCol1, .scrSpaceCol3{
+    display: none;
+}
+    
+.scrSpaceCol2{
+    top: 0;
+	margin: 0;
+	padding: 0;
+    width: 100%;
+	background: #d4ffed !important;
+	background: -webkit-linear-gradient(0deg, #d4ffed 0%, #d4ffed 50%, #a8fbd8 100%) !important;
+	background: linear-gradient(0deg, #d4ffed 0%, #d4ffed 50%, #a8fbd8 100%) !important;
+}
+
+.logoFoot{
+    margin: .3% 0 0 0 !important;
+    height: 36px;
+}
+}
+
+@media screen and (max-width: 1366px){
+
+.NavThird1, .NavThird3{
+	display: none;
+}	
+
+.NavThird2{
+	width: 100%;
+	left: 0 !important;
+	margin-left: 0 !important;
+}
+
+.headBtnInner{
+	width: auto;
+	left: 0 !important;
+	margin: auto;
+}
+
+.headBtnInner h4{
+	font-size: 10px;
+	padding: auto !important;
+	line-height: auto;
+}
+
+.paraConMQ{
+	margin: 3.5vh 0 0 0 !important;
+}
+
+.navFooter{
+	display: none;
+}
+
+.spaceDivMQ{
+	height: 20px;
+}
+
+.spaceDiv{
+	display: none;
+}
+}	
+
+@media screen and (max-width: 1080px){
+
+.headBtnInner{
+	font-size: 10px;
+}
+}
+
+@media  screen and (max-width: 980px){
+
+h4{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+    
+p{
+    font-size: 2em;
+}
+}
+
+@media  screen and (max-width: 574px){
+
+h4, p{
+	font-size: medium;
+}
+}
